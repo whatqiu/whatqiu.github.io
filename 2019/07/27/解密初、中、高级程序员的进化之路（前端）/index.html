@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
+<meta name="keywords" content="转载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（转）解密初、中、高级程序员的进化之路（前端）">
+<meta property="og:url" content="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/index.html">
+<meta property="og:site_name" content="Star New">
+<meta property="og:description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-27T15:39:22.481Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="（转）解密初、中、高级程序员的进化之路（前端）">
+<meta name="twitter:description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>（转）解密初、中、高级程序员的进化之路（前端） | Star New</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Star New</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">你也想当咸鱼吗</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">3</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-categories"></i> <br>分类<span class="badge">0</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-归档"></i> <br>归档<span class="badge">3</span></a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="whatqiu">
+      <meta itemprop="description" content="分享一些自己喜欢的东西">
+      <meta itemprop="image" content="/images/dd.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Star New">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">（转）解密初、中、高级程序员的进化之路（前端）
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-27 22:40:16 / 修改时间：23:39:22" itemprop="dateCreated datePublished" datetime="2019-07-27T22:40:16+08:00">2019-07-27</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="程序员的标准与要求"><a href="#程序员的标准与要求" class="headerlink" title="程序员的标准与要求"></a>程序员的标准与要求</h1><h2 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h2><p>仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。</p>
+<h3 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h3><p>熟悉前端基础知识如 HTML、JS、CSS 。<br>能够使用一门 MVVM 框架进行简单的业务开发。<br>遇到复杂的组件和模块，会找现有的轮子使用。<br>会使用百度、google 等检索工具搜索问题。</p>
+<h2 id="中级程序员（阿里-p5）"><a href="#中级程序员（阿里-p5）" class="headerlink" title="中级程序员（阿里 p5）"></a>中级程序员（阿里 p5）</h2><p>在必要的辅导或标准流程支持下，能独立负责一个子模块或者一个项目的具体任务，对及时性和准确性负责。通常是 2-3 年工作经验的同学。</p>
+<a id="more"></a>
+<h3 id="能力要求-1"><a href="#能力要求-1" class="headerlink" title="能力要求"></a>能力要求</h3><p>除了前端基础知识外，熟悉计算机、网络等专业基础知识。<br>熟练掌握工作中使用的技术栈开发业务。（除了 MVVM 框架外，还能了解 webpack 的配置）。<br>能了解一个需求从开发-上线整个生命周期，并对各个环节负责。<br>具备基本的逻辑分析、问题分解、归纳总结等能力。<br>了解基本的数据结构和算法，写代码较熟练。<br>知道从靠谱的渠道去查找问题，在找不到合适轮子的时候，会造一些简单的轮子辅助业务开发。</p>
+<h2 id="高级程序员（阿里-p6）"><a href="#高级程序员（阿里-p6）" class="headerlink" title="高级程序员（阿里 p6）"></a>高级程序员（阿里 p6）</h2><p>具有独挡一面的能力，能够高质量完成工作，能把握一个系统/团队的整体实现，在推行过程中能提炼新的方法或方案，或对现有方案提出改进建议并被证明有效。通常是 3 年+ 工作经验的同学。</p>
+<h3 id="能力要求-2"><a href="#能力要求-2" class="headerlink" title="能力要求"></a>能力要求</h3><p>具有独挡一面的能力，能高质量的完成模块级的工作。<br>熟练掌握工作中使用的技术栈，并能了解它们的实现原理。<br>能够在一个需求从开发-上线整个生命周期中找到痛点，并能使用技术的手段解决，提升效率。<br>能在模块维度对问题或需求做出分析和拆解，并做出相对合理的实现方案。<br>熟练掌握基础的数据结构和算法，代码符合规范，逻辑清晰。<br>有较好的技术选型能力。</p>
+<h1 id="程序员的进化之路"><a href="#程序员的进化之路" class="headerlink" title="程序员的进化之路"></a>程序员的进化之路</h1><h3 id="初级-gt-中级"><a href="#初级-gt-中级" class="headerlink" title="初级 -&gt; 中级"></a>初级 -&gt; 中级</h3><p>通常在初级这个阶段，是进步空间最大的阶段，这个阶段是不存在天花板的。</p>
+<h4 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h4><p>编码是初级阶段最需要经常做的事情，古话说孰能生巧，写代码也是同样的道理。</p>
+<ul>
+<li><p>写什么的样代码</p>
+<p>  在公司要多做业务，尝试不同的业务，目标是让自己先成为一个熟练工。<br>下班后也可以折腾点小项目做，可以选择自己感兴趣的内容，尝试自己实现一遍。</p>
+</li>
+<li><p>如何写代码</p>
+<p>  学会模仿，参考大牛的编码风格，照葫芦画瓢。<br>如果公司有代码规范，跟随着公司的代码规范走，如果没有，参考业界规范，并用工具（如 eslint）约束自己。<br>遇到一些不会写的，哪怕找到可以参考的代码，跟着抄一遍也行。</p>
+</li>
+</ul>
+<h4 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h4><p>大部分时间都在工作，那么如何合理的利用好 8 小时工作时间呢。</p>
+<ul>
+<li>熟悉业务<br>  不要仅仅埋头写代码，也需要对业务了解，认真参与需求评审环节，明确自己所做的任务。</li>
+</ul>
+<ul>
+<li>熟悉工作流程<br>  要熟悉从需求-开发-联调-测试-上线的每个工作环节，认真按照规范来执行，对上线要有敬畏心。</li>
+</ul>
+<ul>
+<li>提升效率<br>  工作的时候，尽量不要被打断，可以安排一个免打扰时段，比如下午的 2点-4点，只编码而不去处理其它事情。减少在群里 灌水和斗图的时间。</li>
+</ul>
+<ul>
+<li>加班<br>  可以接受合理的加班（比如为了赶某一个需求加班一阵子），不接受没有任何补偿和调休的日常加班（996），因为日常  加班会压缩你学习和生活的时间。</li>
+</ul>
+<h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><p>初级阶段是需要通过大量的学习来提升自己的能力。</p>
+<ul>
+<li>明确自己的学习目标</li>
+<li>学习是为了提升能力，能让你胜任更复杂和有挑战的工作。</li>
+</ul>
+<ul>
+<li>应该学习什么内容<br>前端基础，JS、CSS、HTML 反复学习。<br>工作中用到的一门前端 MVVM 框架。<br>了解一些广度知识，比如 HTTP、正则表达式、Web安全、性能优化、设计模式，数据结构和算法。</li>
+</ul>
+<ul>
+<li>找到合适的学习方式<br>看书+编码：购买经典的书籍阅读，并作为平时写码的参考工具，看书和编码是一个反复的过程，基本就是看书-&gt;编码-&gt;看书-&gt;编码循环个 3-4 次，这个过程就是在不断修炼内功。<br>视频：慕课网的入门实战视频，根据自己的需求购买，要充分学习自己购买的每一个视频，认真的跟着老师学习一遍写一遍，遇到不懂的要积极提问，学习在于深入而不在于多。视频比书籍的好处在于更贴合实践，也更贴合公司业务，另外，课程的升级和更新也更加灵活。<br>官网文档：学习每一个新的技术栈，入门最好的方式是通过它的文档学习，可以系统的过一遍文档，手敲它每一个示例。<br>社区：慕课网手记、掘金、CSDN、InfoQ 等中文社区，利用碎片化时间看一些高质量文章学习。<br>GitHub：学会 GitHub 的使用，知道 clone、fork、pull、push 等基本操作。</li>
+</ul>
+<ul>
+<li>花更多的学习时间<br>如果想比别人成长的快，就得花比别人更多的时间用来学习（这也是为什么不鼓励日常加班），尤其是初级这个阶段，成长曲线是非常快的。</li>
+</ul>
+<ul>
+<li>知识沉淀<br>俗话说好记性不如烂笔头，可以养成写博客的习惯，把学习的内容用文字的形式记录下来，整理成文，并按学习的技术方向做归类。</li>
+</ul>
+<h4 id="提问"><a href="#提问" class="headerlink" title="提问"></a>提问</h4><p>在初级阶段，免不了经常遇到问题，会提问也是一门技术活，好的提问姿势能让你事半功倍。</p>
+<ul>
+<li>不好的提问方式<br>“这个报错是什么意思？”；缺乏思考，没有体现自己关于问题的思考过程。<br>“为什么我的代码和你的一模一样，就是运行不了？”；缺乏上下文，应告知代码是编译不过还是运行不起来、错误提示信息、相关代码、可能出错的代码分析。没有足够的上下文，神仙都不知道如何解决相关的问题。<br>“为什么 xxx 能（不能）yyy”；问的问题本身就是一个错误的结论，通常是只是看到了现象，而没有分析问题的本质。</li>
+</ul>
+<ul>
+<li>好的提问方式<br>首先你在提问之前，自己应该经过充分的思考，并学会把问题拆解，在拆解的过程中就会把问题的复杂度降低。<br>其次要善用搜索引擎，把关键字提取出来去搜索引擎上去搜索，先尝试自己去解决问题。<br>如果仍然不能解决，可以将问题的相关上下文、截图及必要标识及自己的思考过程、查找到的相关资料，以及自己的分析发送给想要帮助你的人，并能提供最小化复现的问题。<br>最后，请将你的问题及解决方案重新整理，并告知帮助你的人问题已经解决，重新整理解决问题的过程会帮助你理清思路、从而对问题有着更深的理解。</li>
+</ul>
+<h3 id="中级-gt-高级"><a href="#中级-gt-高级" class="headerlink" title="中级 -&gt; 高级"></a>中级 -&gt; 高级</h3><p>到了中级阶段，基本上意味着你可以在大公司缺人的时候进入大公司工作了，如果想成为大公司不可拒绝的人才， 那你还需要朝着高级阶段努力。</p>
+<h4 id="编码-1"><a href="#编码-1" class="headerlink" title="编码"></a>编码</h4><p>没错，到了中级阶段，你想要提升最重要的途径还是要编码。</p>
+<ul>
+<li>写什么的样代码<br>和初级不同，除了做业务之外，你也参与开发做一些偏技术类型的项目，比如参与组内组件库的开发，一些通用 JSSDK 的开发，这些会对你的技术要求会更高。<br>有机会去参与平时使用到的一些开源技术栈的共建，比如想实现每个 feature 但现有开源库不满足，实现难度不大的情况下可以去提一个 pull request。</li>
+</ul>
+<ul>
+<li>如何写代码<br>学会模仿，除了参考大牛的编码风格，还要琢磨他们的编码思路，多思考他们为什么这么做。<br>学会组件化、模块化的开发方式，学会复用和封装，减少 CV 的操作。<br>对自己的代码质量负责，可以经常组织 code review。</li>
+</ul>
+<h4 id="工作-1"><a href="#工作-1" class="headerlink" title="工作"></a>工作</h4><p>想要进阶，需要在工作方面有些产出。</p>
+<ul>
+<li>业务思考<br>要明白业务和公司的目标，参与到需求的早期阶段中，同时也要多思考业务，想着有没有通过技术手段来提升业务价值，比如移动端的白屏时间减少，可以带来很好的用户体验，提升用户的留存率。</li>
+</ul>
+<ul>
+<li>技术思考<br>思考业务开发中的一些痛点，如何用技术手段去优化业务的开发流程，提升开发效率，比如为业务量身定制一款脚手架工具。</li>
+</ul>
+<ul>
+<li>优化工作流程<br>不仅要熟悉从需求-开发-联调-测试-上线的每个工作环节，还要多思考每个环节有没有可以提升的点，特别是上线过程，比如能不能做到自动化，能不能做到小流量上线，能不能及时回滚代码。</li>
+</ul>
+<ul>
+<li>技术分享<br>把工作中遇到的一些问题的解决方案、学习的一些新技术，产出的一些技术项目总结下来，作为组内技术分享和输出，这样一是可以总结沉淀你的技术，二是可以让大家能知道你做的东西，并活跃组内的技术氛围，三是锻炼自己的表述能力，这个能力在大公司的晋升述职中非常重要。</li>
+</ul>
+<h4 id="学习-1"><a href="#学习-1" class="headerlink" title="学习"></a>学习</h4><p>中级阶段仍然需要通过大量的学习来提升自己的能力。</p>
+<ul>
+<li>明确自己的学习目标<br>学习是为了提升自己的硬实力，不仅仅能够提升工作效率，还能让自己更好的服务于业务，升职加薪。</li>
+</ul>
+<ul>
+<li>应该学习什么内容<br>研究工作中所用到的工具链，不仅仅是运行时的 MVVM 框架，还可以是编译时的 webpack，必要的时候去研究其中的源码实现。<br>深入学习一些广度知识，比如 HTTP、正则表达式、Web安全、性能优化、设计模式，数据结构和算法，并把它们应用到你的工作中。</li>
+</ul>
+<ul>
+<li>找到合适的学习方式<br>看书：找到所学习方向的经典书籍阅读，适当做一些学习笔记。<br>视频：如慕课网的进阶实战视频，根据自己的需求购买。<br>官网文档：可以尝试去看一下英文文档。<br>社区：StackOverflow、HackerNews，慕课网手记、掘金等，除了利用碎片化时间看一些高质量文章学习，也可以往上面发布一些优质文章。<br>GitHub：关注 trending，参与开源社区的共建，并尝试自己造一些轮子。</li>
+</ul>
+<ul>
+<li>学习时间与深度<br>在中级阶段，你仍然需要花很多时间去学习，这个时候要注重自己学习的深度了。</li>
+</ul>
+<ul>
+<li>知识沉淀<br>俗话说好记性不如烂笔头，可以养成写博客的习惯，把工作中深入学习到的一些非敏感知识记录下来并发布，而不仅仅去发布一些基础知识的学习了。</li>
+</ul>
+<ul>
+<li>技术视野<br>除了自己工作中的使用的技术栈之外，也要了解同类其它优秀的开源技术栈，从多个维度（feature 完整性、文档、上手难度、维护力度、生态等）去做对比。<br>要保持对新技术的敏感的关注，并时刻思考这些技术能否为自己的业务带来价值，在需要的时候做合理的技术选型。</li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>所谓技术能力其实就是解决问题的能力和学习能力，所以无论你在哪个阶段，甚至是更高的阶段，不断提升这两个能力都是你应该一直要做的事情。</p>
+<p>作者：黄轶<br>链接：<a href="https://juejin.im/post/5d3a6d9e51882570d50f5566" target="_blank" rel="noopener">https://juejin.im/post/5d3a6d9e51882570d50f5566</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/转载/" rel="tag"><i class="fa fa-tag"></i> 转载</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/dd.png" alt="whatqiu">
+            
+              <p class="site-author-name" itemprop="name">whatqiu</p>
+              <div class="site-description motion-element" itemprop="description">分享一些自己喜欢的东西</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/whatqiu" title="GitHub &rarr; https://github.com/whatqiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/yourname" title="Twitter &rarr; https://twitter.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.facebook.com/yourname" title="FB Page &rarr; https://www.facebook.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序员的标准与要求"><span class="nav-number">1.</span> <span class="nav-text">程序员的标准与要求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初级程序员"><span class="nav-number">1.1.</span> <span class="nav-text">初级程序员</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求"><span class="nav-number">1.1.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中级程序员（阿里-p5）"><span class="nav-number">1.2.</span> <span class="nav-text">中级程序员（阿里 p5）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级程序员（阿里-p6）"><span class="nav-number">1.3.</span> <span class="nav-text">高级程序员（阿里 p6）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序员的进化之路"><span class="nav-number">2.</span> <span class="nav-text">程序员的进化之路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初级-gt-中级"><span class="nav-number">2.0.1.</span> <span class="nav-text">初级 -&gt; 中级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编码"><span class="nav-number">2.0.1.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作"><span class="nav-number">2.0.1.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习"><span class="nav-number">2.0.1.3.</span> <span class="nav-text">学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提问"><span class="nav-number">2.0.1.4.</span> <span class="nav-text">提问</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中级-gt-高级"><span class="nav-number">2.0.2.</span> <span class="nav-text">中级 -&gt; 高级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编码-1"><span class="nav-number">2.0.2.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作-1"><span class="nav-number">2.0.2.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习-1"><span class="nav-number">2.0.2.3.</span> <span class="nav-text">学习</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">whatqiu</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.2</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left","width":150,"height":222},"mobile":{"show":true,"scale":0.5},"log":false});</script></body>
+</html>
