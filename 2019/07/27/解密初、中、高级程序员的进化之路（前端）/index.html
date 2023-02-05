@@ -1,446 +1,246 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-
-<link rel="stylesheet" href="/css/main.css?v=7.1.2">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '7.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
-<meta name="keywords" content="前端,转载">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"whatqiu.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
 <meta property="og:type" content="article">
 <meta property="og:title" content="（转）解密初、中、高级程序员的进化之路（前端）">
-<meta property="og:url" content="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/index.html">
+<meta property="og:url" content="http://whatqiu.github.io/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/index.html">
 <meta property="og:site_name" content="Star New">
 <meta property="og:description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-10T03:23:15.051Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-07-27T14:40:16.000Z">
+<meta property="article:modified_time" content="2020-08-10T03:23:15.051Z">
+<meta property="article:author" content="whatqiu">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="转载">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="（转）解密初、中、高级程序员的进化之路（前端）">
-<meta name="twitter:description" content="程序员的标准与要求初级程序员仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。 能力要求熟悉前端基础知识如 HTML、JS、CSS 。能够使用一门 MVVM 框架进行简单的业务开发。遇到复杂的组件和模块，会找现有的轮子使用。会使用百度、google 等检索工具搜索问题。 中级程序员（阿里 p5）在必要的辅导或标准流程支持下，能独立负责一个子模块">
+
+
+<link rel="canonical" href="http://whatqiu.github.io/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/">
 
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://whatqiu.github.io/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/","path":"2019/07/27/解密初、中、高级程序员的进化之路（前端）/","title":"（转）解密初、中、高级程序员的进化之路（前端）"}</script>
 
-
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>（转）解密初、中、高级程序员的进化之路（前端） | Star New</title>
   
-  
-  <link rel="canonical" href="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>（转）解密初、中、高级程序员的进化之路（前端） | Star New</title>
-  
-
-
-
-
-
-
-
-
 
 
 
 
   <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Star New</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-      
-        <h1 class="site-subtitle" itemprop="description">你也想当咸鱼吗</h1>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Star New</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">你也想当咸鱼吗</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">8</span></a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-categories"></i> <br>分类<span class="badge">1</span></a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-归档"></i> <br>归档<span class="badge">6</span></a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签<span class="badge">8</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="categories fa-fw"></i>分类<span class="badge">1</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="归档 fa-fw"></i>归档<span class="badge">9</span></a></li>
+  </ul>
 </nav>
 
 
 
-  
-
-
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E6%A0%87%E5%87%86%E4%B8%8E%E8%A6%81%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">程序员的标准与要求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98"><span class="nav-number">1.1.</span> <span class="nav-text">初级程序员</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%BD%E5%8A%9B%E8%A6%81%E6%B1%82"><span class="nav-number">1.1.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%88%E9%98%BF%E9%87%8C-p5%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">中级程序员（阿里 p5）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%BD%E5%8A%9B%E8%A6%81%E6%B1%82-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%EF%BC%88%E9%98%BF%E9%87%8C-p6%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">高级程序员（阿里 p6）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%83%BD%E5%8A%9B%E8%A6%81%E6%B1%82-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">程序员的进化之路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E7%BA%A7-gt-%E4%B8%AD%E7%BA%A7"><span class="nav-number">2.0.1.</span> <span class="nav-text">初级 -&gt; 中级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E7%A0%81"><span class="nav-number">2.0.1.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C"><span class="nav-number">2.0.1.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">2.0.1.3.</span> <span class="nav-text">学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E9%97%AE"><span class="nav-number">2.0.1.4.</span> <span class="nav-text">提问</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E7%BA%A7-gt-%E9%AB%98%E7%BA%A7"><span class="nav-number">2.0.2.</span> <span class="nav-text">中级 -&gt; 高级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E7%A0%81-1"><span class="nav-number">2.0.2.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C-1"><span class="nav-number">2.0.2.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0-1"><span class="nav-number">2.0.2.3.</span> <span class="nav-text">学习</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="whatqiu"
+      src="/images/dd.png">
+  <p class="site-author-name" itemprop="name">whatqiu</p>
+  <div class="site-description" itemprop="description">分享一些自己喜欢的东西</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/whatqiu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;whatqiu" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+          </div>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
 
-          
-          <div id="content" class="content">
-            
+    <div class="main-inner post posts-expand">
 
-  <div id="posts" class="posts-expand">
-    
 
   
 
-  
+
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          （转）解密初、中、高级程序员的进化之路（前端）
+        </h1>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">（转）解密初、中、高级程序员的进化之路（前端）
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-              
-            
-          </h2>
-        
+      <time title="创建时间：2019-07-27 22:40:16" itemprop="dateCreated datePublished" datetime="2019-07-27T22:40:16+08:00">2019-07-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-10 11:23:15" itemprop="dateModified" datetime="2020-08-10T11:23:15+08:00">2020-08-10</time>
+      </span>
 
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-27 22:40:16" itemprop="dateCreated datePublished" datetime="2019-07-27T22:40:16+08:00">2019-07-27</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-08-10 11:23:15" itemprop="dateModified" datetime="2020-08-10T11:23:15+08:00">2020-08-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="post-meta-item-icon">
-            <i class="fa fa-eye"></i>
-             阅读次数： 
-            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
-            </span>
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="程序员的标准与要求"><a href="#程序员的标准与要求" class="headerlink" title="程序员的标准与要求"></a>程序员的标准与要求</h1><h2 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h2><p>仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。</p>
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="程序员的标准与要求"><a href="#程序员的标准与要求" class="headerlink" title="程序员的标准与要求"></a>程序员的标准与要求</h1><h2 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h2><p>仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。</p>
 <h3 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h3><p>熟悉前端基础知识如 HTML、JS、CSS 。<br>能够使用一门 MVVM 框架进行简单的业务开发。<br>遇到复杂的组件和模块，会找现有的轮子使用。<br>会使用百度、google 等检索工具搜索问题。</p>
 <h2 id="中级程序员（阿里-p5）"><a href="#中级程序员（阿里-p5）" class="headerlink" title="中级程序员（阿里 p5）"></a>中级程序员（阿里 p5）</h2><p>在必要的辅导或标准流程支持下，能独立负责一个子模块或者一个项目的具体任务，对及时性和准确性负责。通常是 2-3 年工作经验的同学。</p>
-<a id="more"></a>
+<span id="more"></span>
 <h3 id="能力要求-1"><a href="#能力要求-1" class="headerlink" title="能力要求"></a>能力要求</h3><p>除了前端基础知识外，熟悉计算机、网络等专业基础知识。<br>熟练掌握工作中使用的技术栈开发业务。（除了 MVVM 框架外，还能了解 webpack 的配置）。<br>能了解一个需求从开发-上线整个生命周期，并对各个环节负责。<br>具备基本的逻辑分析、问题分解、归纳总结等能力。<br>了解基本的数据结构和算法，写代码较熟练。<br>知道从靠谱的渠道去查找问题，在找不到合适轮子的时候，会造一些简单的轮子辅助业务开发。</p>
 <h2 id="高级程序员（阿里-p6）"><a href="#高级程序员（阿里-p6）" class="headerlink" title="高级程序员（阿里 p6）"></a>高级程序员（阿里 p6）</h2><p>具有独挡一面的能力，能够高质量完成工作，能把握一个系统/团队的整体实现，在推行过程中能提炼新的方法或方案，或对现有方案提出改进建议并被证明有效。通常是 3 年+ 工作经验的同学。</p>
 <h3 id="能力要求-2"><a href="#能力要求-2" class="headerlink" title="能力要求"></a>能力要求</h3><p>具有独挡一面的能力，能高质量的完成模块级的工作。<br>熟练掌握工作中使用的技术栈，并能了解它们的实现原理。<br>能够在一个需求从开发-上线整个生命周期中找到痛点，并能使用技术的手段解决，提升效率。<br>能在模块维度对问题或需求做出分析和拆解，并做出相对合理的实现方案。<br>熟练掌握基础的数据结构和算法，代码符合规范，逻辑清晰。<br>有较好的技术选型能力。</p>
@@ -532,440 +332,67 @@
 <li>技术视野<br>除了自己工作中的使用的技术栈之外，也要了解同类其它优秀的开源技术栈，从多个维度（feature 完整性、文档、上手难度、维护力度、生态等）去做对比。<br>要保持对新技术的敏感的关注，并时刻思考这些技术能否为自己的业务带来价值，在需要的时候做合理的技术选型。</li>
 </ul>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>所谓技术能力其实就是解决问题的能力和学习能力，所以无论你在哪个阶段，甚至是更高的阶段，不断提升这两个能力都是你应该一直要做的事情。</p>
-<p>作者：黄轶<br>链接：<a href="https://juejin.im/post/5d3a6d9e51882570d50f5566" target="_blank" rel="noopener">https://juejin.im/post/5d3a6d9e51882570d50f5566</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>作者：黄轶<br>链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/5d3a6d9e51882570d50f5566">https://juejin.im/post/5d3a6d9e51882570d50f5566</a><br>来源：掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
-      
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+              <a href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag"># 转载</a>
+          </div>
+
         
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
-          
-            <a href="/tags/转载/" rel="tag"><i class="fa fa-tag"></i> 转载</a>
-          
-        </div>
-      
 
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/06/18/记录2019年的618做了什么/" rel="next" title="记录2019年的618做了什么">
-                <i class="fa fa-chevron-left"></i> 记录2019年的618做了什么
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/01/推荐微信小程序入门blog/" rel="prev" title="推荐微信小程序入门blog">
-                推荐微信小程序入门blog <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-  </div>
-
-
-          </div>
-          
-
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/dd.png" alt="whatqiu">
-            
-              <p class="site-author-name" itemprop="name">whatqiu</p>
-              <div class="site-description motion-element" itemprop="description">分享一些自己喜欢的东西</div>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                      <a href="/categories/">
-                    
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                      <a href="/tags/">
-                    
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/whatqiu" title="GitHub &rarr; https://github.com/whatqiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://twitter.com/yourname" title="Twitter &rarr; https://twitter.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.facebook.com/yourname" title="FB Page &rarr; https://www.facebook.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
-                </span>
-              
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/06/18/%E8%AE%B0%E5%BD%952019%E5%B9%B4%E7%9A%84618%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/" rel="prev" title="记录2019年的618做了什么">
+                  <i class="fa fa-chevron-left"></i> 记录2019年的618做了什么
+                </a>
             </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序员的标准与要求"><span class="nav-number">1.</span> <span class="nav-text">程序员的标准与要求</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初级程序员"><span class="nav-number">1.1.</span> <span class="nav-text">初级程序员</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求"><span class="nav-number">1.1.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中级程序员（阿里-p5）"><span class="nav-number">1.2.</span> <span class="nav-text">中级程序员（阿里 p5）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高级程序员（阿里-p6）"><span class="nav-number">1.3.</span> <span class="nav-text">高级程序员（阿里 p6）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能力要求-2"><span class="nav-number">1.3.1.</span> <span class="nav-text">能力要求</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#程序员的进化之路"><span class="nav-number">2.</span> <span class="nav-text">程序员的进化之路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初级-gt-中级"><span class="nav-number">2.0.1.</span> <span class="nav-text">初级 -&gt; 中级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编码"><span class="nav-number">2.0.1.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作"><span class="nav-number">2.0.1.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习"><span class="nav-number">2.0.1.3.</span> <span class="nav-text">学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提问"><span class="nav-number">2.0.1.4.</span> <span class="nav-text">提问</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#中级-gt-高级"><span class="nav-number">2.0.2.</span> <span class="nav-text">中级 -&gt; 高级</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编码-1"><span class="nav-number">2.0.2.1.</span> <span class="nav-text">编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工作-1"><span class="nav-number">2.0.2.2.</span> <span class="nav-text">工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习-1"><span class="nav-number">2.0.2.3.</span> <span class="nav-text">学习</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></div>
-            
-
+            <div class="post-nav-item">
+                <a href="/2019/08/01/%E6%8E%A8%E8%8D%90%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8blog/" rel="next" title="推荐微信小程序入门blog">
+                  推荐微信小程序入门blog <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
           </div>
-        </div>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-  
+    </footer>
+  </article>
+</div>
 
 
-        
-      </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">whatqiu</span>
-
-  
-
-  
 </div>
-
-
-
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.2</div>
-
-
-
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="post-meta-divider">|</span>
-  
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="总访问量">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
-
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
-
-    
-
-    
-
-    
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
-  
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+  </footer>
 
   
-  <script src="/lib/jquery/index.js?v=3.4.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/utils.js?v=7.1.2"></script>
-
-  <script src="/js/motion.js?v=7.1.2"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.2"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
-
-
-
-  
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
-
-
-
-  
-
-
-  <script src="/js/next-boot.js?v=7.1.2"></script>
-
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 
@@ -974,41 +401,9 @@
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
 
 
-  
 
-  
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left","width":150,"height":222},"mobile":{"show":true,"scale":0.5},"log":false});</script></body>
+</body>
 </html>
