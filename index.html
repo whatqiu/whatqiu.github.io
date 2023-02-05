@@ -1,593 +1,538 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.9.0">
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-
-<link rel="stylesheet" href="/css/main.css?v=7.1.2">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '7.1.2',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="分享一些自己喜欢的东西">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"whatqiu.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.7.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="分享一些自己喜欢的东西">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Star New">
 <meta property="og:url" content="http://whatqiu.github.io/index.html">
 <meta property="og:site_name" content="Star New">
 <meta property="og:description" content="分享一些自己喜欢的东西">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="whatqiu">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Star New">
-<meta name="twitter:description" content="分享一些自己喜欢的东西">
+
+
+<link rel="canonical" href="http://whatqiu.github.io/">
 
 
 
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
 
-
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Star New</title>
   
-  
-  <link rel="canonical" href="http://whatqiu.github.io/">
-
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>Star New</title>
-  
-
-
-
-
-
-
-
-
 
 
 
 
   <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Star New</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
-    
-      
-        <h1 class="site-subtitle" itemprop="description">你也想当咸鱼吗</h1>
-      
-    
-    
   </div>
 
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Star New</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">你也想当咸鱼吗</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
 
 
 <nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">8</span></a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-categories"></i> <br>分类<span class="badge">1</span></a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-归档"></i> <br>归档<span class="badge">6</span></a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签<span class="badge">8</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="categories fa-fw"></i>分类<span class="badge">1</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="归档 fa-fw"></i>归档<span class="badge">9</span></a></li>
+  </ul>
 </nav>
 
 
 
-  
-
-
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="whatqiu"
+      src="/images/dd.png">
+  <p class="site-author-name" itemprop="name">whatqiu</p>
+  <div class="site-description" itemprop="description">分享一些自己喜欢的东西</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/whatqiu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;whatqiu" rel="noopener" target="_blank"><i class="github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+          </div>
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-            
 
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
+    <div class="main-inner index posts-expand">
+
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2020/06/26/阿里云服务器从零开始配置/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2022/09/07/%E9%87%8D%E6%96%B0%E6%8A%98%E8%85%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/09/07/%E9%87%8D%E6%96%B0%E6%8A%98%E8%85%BE%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-title-link" itemprop="url">重新折腾服务器</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/06/26/阿里云服务器从零开始配置/" class="post-title-link" itemprop="url">阿里云服务器从零开始配置</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2022-09-07 00:14:56" itemprop="dateCreated datePublished" datetime="2022-09-07T00:14:56+08:00">2022-09-07</time>
+    </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-06-26 02:47:36" itemprop="dateCreated datePublished" datetime="2020-06-26T02:47:36+08:00">2020-06-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-08-10 11:22:21" itemprop="dateModified" datetime="2020-08-10T11:22:21+08:00">2020-08-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="购买与配置"><a href="#购买与配置" class="headerlink" title="购买与配置"></a>购买与配置</h2><p>重新买了服务器，其实配置很简单的，进到官网，选好自己需要的轻应用服务器</p>
-<p><img src="/imgs/ali1.png" alt></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/06/26/阿里云服务器从零开始配置/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+          <script src="\assets\js\APlayer.min.js"> </script>
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2020/03/24/music/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2021/10/23/%E4%B8%80%E5%91%A8%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E9%9F%B3%E4%B9%90app/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/23/%E4%B8%80%E5%91%A8%E5%AE%8C%E6%88%90%E4%B8%80%E4%B8%AA%E9%9F%B3%E4%B9%90app/" class="post-title-link" itemprop="url">一周完成一个音乐app</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/03/24/music/" class="post-title-link" itemprop="url">在hexo中添加音乐播放</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2021-10-23 12:02:09" itemprop="dateCreated datePublished" datetime="2021-10-23T12:02:09+08:00">2021-10-23</time>
+    </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-03-24 19:27:50 / 修改时间：23:22:41" itemprop="dateCreated datePublished" datetime="2020-03-24T19:27:50+08:00">2020-03-24</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <script src="\assets\js\APlayer.min.js"> </script>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2021/08/18/2022%E9%9D%A2%E8%AF%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
+      <meta itemprop="name" content="whatqiu">
+      <meta itemprop="description" content="分享一些自己喜欢的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Star New">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/08/18/2022%E9%9D%A2%E8%AF%95/" class="post-title-link" itemprop="url">2021面试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-08-18 14:53:15" itemprop="dateCreated datePublished" datetime="2021-08-18T14:53:15+08:00">2021-08-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-10-27 18:43:30" itemprop="dateModified" datetime="2021-10-27T18:43:30+08:00">2021-10-27</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <script src="\assets\js\APlayer.min.js"> </script>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2020/06/26/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
+      <meta itemprop="name" content="whatqiu">
+      <meta itemprop="description" content="分享一些自己喜欢的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Star New">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/06/26/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">阿里云服务器从零开始配置</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-06-26 02:47:36" itemprop="dateCreated datePublished" datetime="2020-06-26T02:47:36+08:00">2020-06-26</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2023-02-06 01:19:27" itemprop="dateModified" datetime="2023-02-06T01:19:27+08:00">2023-02-06</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <script src="\assets\js\APlayer.min.js"> </script><h2 id="购买与配置"><a href="#购买与配置" class="headerlink" title="购买与配置"></a>购买与配置</h2><p>重新买了服务器，其实配置很简单的，进到官网，选好自己需要的轻应用服务器</p>
+<p><img src="/imgs/ali1.png"></p>
+<!---more-->
+
+<p>然后就是用FinalSheel远程连接服务器imgs</p>
+<p><img src="/imgs/ali2.png"></p>
+<h2 id="安装服务（Node-js-Nginx）"><a href="#安装服务（Node-js-Nginx）" class="headerlink" title="安装服务（Node.js ,Nginx）"></a>安装服务（Node.js ,Nginx）</h2><p>我一般是把服务装在**/usr/local**下</p>
+<p><img src="/imgs/ali3.png"></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 安装新版nodejs</span><br><span class="line">wget https://nodejs.org/dist/v12.18.2/node-v12.18.2-linux-x64.tar.xz</span><br><span class="line"></span><br><span class="line">// 解压</span><br><span class="line">tar -xvf node-v12.18.2-linux-x64.tar.xz</span><br><span class="line"></span><br><span class="line">// 重命名</span><br><span class="line">mv node-v12.18.2-linux-x64 nodejs</span><br><span class="line"></span><br><span class="line">//软链接</span><br><span class="line">ln -s /usr/local/nodejs/bin/node /usr/local/bin</span><br><span class="line">ln -s /usr/local/nodejs/bin/npm /usr/local/bin</span><br><span class="line"></span><br><span class="line">// 然后运行命令看是否ok</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>Nginx差不多</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wget http://nginx.org/download/nginx-1.18.0.tar.gz</span><br><span class="line"></span><br><span class="line">tar -xvf nginx-1.18.0.tar.gz</span><br><span class="line"></span><br><span class="line">mv nginx-1.18.0 nginx1.18</span><br><span class="line"></span><br><span class="line">yum -y install gcc zlib zlib-devel pcre-devel openssl openssl-devel</span><br><span class="line"></span><br><span class="line">./configure</span><br><span class="line"></span><br><span class="line">make</span><br><span class="line"></span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<p><strong><font color=red><em>2023年2月6日更新</em></font></strong></p>
+<p>重新配置nginx出现报错</p>
+<p><img src="/imgs/ali2023.png"></p>
+<p>在nginx下创建logs</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir logs</span><br></pre></td></tr></table></figure>
+
+<p><strong>配置nginx.conf</strong></p>
+<p><img src="/imgs/ali4.png"></p>
+<p>然后把我的项目拉取到local下面</p>
+<p><strong>安装依赖npm install</strong></p>
+<p><strong>安装Pm2</strong>(为了运行服务)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br><span class="line"></span><br><span class="line">// 找到路径</span><br><span class="line">ln -s 路径bin/pm2 /usr/local/bin</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>重启nginx(打开nginx/sbin)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -s reload</span><br></pre></td></tr></table></figure>
+
+
+
+<p>最后完美运行！</p>
+<p><img src="/imgs/ali5.png"></p>
+<p><img src="/imgs/ali6.png"></p>
 
       
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2020/03/24/music/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
+      <meta itemprop="name" content="whatqiu">
+      <meta itemprop="description" content="分享一些自己喜欢的东西">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Star New">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/03/24/music/" class="post-title-link" itemprop="url">在hexo中添加音乐播放</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
 
-      
-        
+      <time title="创建时间：2020-03-24 19:27:50 / 修改时间：23:22:41" itemprop="dateCreated datePublished" datetime="2020-03-24T19:27:50+08:00">2020-03-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
           <p>添加音乐有2种方式，Aplayer和meting,meting可以添加各平台歌单id，很简单，自己琢磨^_^</p>
 <h2 id="Aplayer"><a href="#Aplayer" class="headerlink" title="Aplayer"></a>Aplayer</h2><p>你需要知道，这2个不能同时使用，所以Aplayer的我就不用了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;残酷天使行动纲领&quot; &quot;22&quot; &quot;1.mp3&quot; &quot;http://p1.music.126.net/45hISoQHiPTbPg9oapc7DQ==/109951163549396167.jpg?param=130y130&quot; &quot;lrc:1.lrc&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;残酷天使行动纲领&quot; &quot;22&quot; &quot;1.mp3&quot; &quot;http://p1.music.126.net/45hISoQHiPTbPg9oapc7DQ==/109951163549396167.jpg?param=130y130&quot; &quot;lrc:1.lrc&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
-<p>格式就是上下这样， 当开启 Hexo 的 <a href="https://hexo.io/zh-cn/docs/asset-folders.html#文章资源文件夹" target="_blank" rel="noopener">文章资源文件夹</a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用： </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;caffeine.mp3&quot; &quot;picture.jpg&quot; &quot;lrc:caffeine.txt&quot; %&#125;</span><br></pre></td></tr></table></figure>
+<p>格式就是上下这样， 当开启 Hexo 的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html#%E6%96%87%E7%AB%A0%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9">文章资源文件夹</a> 功能时，可以将图片、音乐文件、歌词文件放入与文章对应的资源文件夹中，然后直接引用： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;Caffeine&quot; &quot;Jeff Williams&quot; &quot;caffeine.mp3&quot; &quot;picture.jpg&quot; &quot;lrc:caffeine.txt&quot; %&#125;</span><br></pre></td></tr></table></figure>
 
 <h5 id="标签参数"><a href="#标签参数" class="headerlink" title="标签参数"></a>标签参数</h5><ul>
 <li><code>title</code> : 曲目标题</li>
@@ -602,1068 +547,397 @@
 <h5 id="使用播放列表"><a href="#使用播放列表" class="headerlink" title="使用播放列表"></a><strong>使用播放列表</strong></h5><p>一开始调试歌词无法显示出来，搞了1个多小时就忽然出来了。。。</p>
 <p>另外按照文档写，但是歌手名字无法显示QAQ</p>
           <!--noindex-->
-          
-            <div class="post-button text-center">
+            <div class="post-button">
               <a class="btn" href="/2020/03/24/music/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/08/01/推荐微信小程序入门blog/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/08/01/%E6%8E%A8%E8%8D%90%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/08/01/%E6%8E%A8%E8%8D%90%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8blog/" class="post-title-link" itemprop="url">推荐微信小程序入门blog</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/01/推荐微信小程序入门blog/" class="post-title-link" itemprop="url">推荐微信小程序入门blog</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2019-08-01 12:39:49" itemprop="dateCreated datePublished" datetime="2019-08-01T12:39:49+08:00">2019-08-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-10 11:21:25" itemprop="dateModified" datetime="2020-08-10T11:21:25+08:00">2020-08-10</time>
+      </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-01 12:39:49" itemprop="dateCreated datePublished" datetime="2019-08-01T12:39:49+08:00">2019-08-01</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-08-10 11:21:25" itemprop="dateModified" datetime="2020-08-10T11:21:25+08:00">2020-08-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
           <p>近日在掘金瞎逛，看到几篇微信小程序入门的不错的文章，特地记录下来，方便查阅与研究</p>
 <p>不过，<strong>肝文档</strong>是最好的！  </p>
-<p><font color="#4169e1" size="5"><strong>肝文档！肝文档！！肝文档！！!</strong></font></p>
-<h4 id="这是第一篇：直达电梯"><a href="#这是第一篇：直达电梯" class="headerlink" title="这是第一篇：直达电梯"></a>这是第一篇：<a href="https://juejin.im/post/5cfdd89ef265da1b9253cf24" target="_blank" rel="noopener">直达电梯</a></h4><p><img src="http://tva1.sinaimg.cn/large/0060lm7Tly1g5wqz6u4i3j30kg0ogk5e.jpg" alt></p>
+<p><font color="#4169e1" size=5><strong>肝文档！肝文档！！肝文档！！!</strong></font></p>
+<h4 id="这是第一篇：直达电梯"><a href="#这是第一篇：直达电梯" class="headerlink" title="这是第一篇：直达电梯"></a>这是第一篇：<a target="_blank" rel="noopener" href="https://juejin.im/post/5cfdd89ef265da1b9253cf24">直达电梯</a></h4><p><img src="http://tva1.sinaimg.cn/large/0060lm7Tly1g5wqz6u4i3j30kg0ogk5e.jpg"></p>
 <p>没想到作者也是我lp的粉丝    </p>
 <p><font color="#4169e1">系不系挺有意思鸭！！！§(<em>￣▽￣</em>)§     </font></p>
           <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/08/01/推荐微信小程序入门blog/#more" rel="contents">
+            <div class="post-button">
+              <a class="btn" href="/2019/08/01/%E6%8E%A8%E8%8D%90%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%85%A5%E9%97%A8blog/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/07/27/解密初、中、高级程序员的进化之路（前端）/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/" class="post-title-link" itemprop="url">（转）解密初、中、高级程序员的进化之路（前端）</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/27/解密初、中、高级程序员的进化之路（前端）/" class="post-title-link" itemprop="url">（转）解密初、中、高级程序员的进化之路（前端）</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2019-07-27 22:40:16" itemprop="dateCreated datePublished" datetime="2019-07-27T22:40:16+08:00">2019-07-27</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-10 11:23:15" itemprop="dateModified" datetime="2020-08-10T11:23:15+08:00">2020-08-10</time>
+      </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-07-27 22:40:16" itemprop="dateCreated datePublished" datetime="2019-07-27T22:40:16+08:00">2019-07-27</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-08-10 11:23:15" itemprop="dateModified" datetime="2020-08-10T11:23:15+08:00">2020-08-10</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
           <h1 id="程序员的标准与要求"><a href="#程序员的标准与要求" class="headerlink" title="程序员的标准与要求"></a>程序员的标准与要求</h1><h2 id="初级程序员"><a href="#初级程序员" class="headerlink" title="初级程序员"></a>初级程序员</h2><p>仅能完成简单模块和项目的开发工作，难以胜任复杂模块的开发。通常是入行不久， 1 年及以下工作经验的同学。</p>
 <h3 id="能力要求"><a href="#能力要求" class="headerlink" title="能力要求"></a>能力要求</h3><p>熟悉前端基础知识如 HTML、JS、CSS 。<br>能够使用一门 MVVM 框架进行简单的业务开发。<br>遇到复杂的组件和模块，会找现有的轮子使用。<br>会使用百度、google 等检索工具搜索问题。</p>
 <h2 id="中级程序员（阿里-p5）"><a href="#中级程序员（阿里-p5）" class="headerlink" title="中级程序员（阿里 p5）"></a>中级程序员（阿里 p5）</h2><p>在必要的辅导或标准流程支持下，能独立负责一个子模块或者一个项目的具体任务，对及时性和准确性负责。通常是 2-3 年工作经验的同学。</p>
           <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/07/27/解密初、中、高级程序员的进化之路（前端）/#more" rel="contents">
+            <div class="post-button">
+              <a class="btn" href="/2019/07/27/%E8%A7%A3%E5%AF%86%E5%88%9D%E3%80%81%E4%B8%AD%E3%80%81%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF%EF%BC%88%E5%89%8D%E7%AB%AF%EF%BC%89/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/06/18/记录2019年的618做了什么/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/06/18/%E8%AE%B0%E5%BD%952019%E5%B9%B4%E7%9A%84618%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/06/18/%E8%AE%B0%E5%BD%952019%E5%B9%B4%E7%9A%84618%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/" class="post-title-link" itemprop="url">记录2019年的618做了什么</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/18/记录2019年的618做了什么/" class="post-title-link" itemprop="url">记录2019年的618做了什么</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2019-06-18 12:35:56" itemprop="dateCreated datePublished" datetime="2019-06-18T12:35:56+08:00">2019-06-18</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-08-10 11:23:37" itemprop="dateModified" datetime="2020-08-10T11:23:37+08:00">2020-08-10</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-18 12:35:56" itemprop="dateCreated datePublished" datetime="2019-06-18T12:35:56+08:00">2019-06-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-08-10 11:23:37" itemprop="dateModified" datetime="2020-08-10T11:23:37+08:00">2020-08-10</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="利用Vue做一款自己的音乐播放器"><a href="#利用Vue做一款自己的音乐播放器" class="headerlink" title="利用Vue做一款自己的音乐播放器"></a>利用Vue做一款自己的音乐播放器</h1><p><img src="http://tva1.sinaimg.cn/large/0060lm7Tly1g4uu93jvk4j30c80c8aad.jpg" alt></p>
+          <h1 id="利用Vue做一款自己的音乐播放器"><a href="#利用Vue做一款自己的音乐播放器" class="headerlink" title="利用Vue做一款自己的音乐播放器"></a>利用Vue做一款自己的音乐播放器</h1><p><img src="http://tva1.sinaimg.cn/large/0060lm7Tly1g4uu93jvk4j30c80c8aad.jpg"></p>
 <h2 id="第一步-搭建环境"><a href="#第一步-搭建环境" class="headerlink" title="第一步: 搭建环境"></a>第一步: 搭建环境</h2><p>搭建好环境，这个自己网上看吧</p>
 <p>我用的是</p>
 <ul>
-<li><p>Vue@ 2.6.10            <a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">直达官网</a></p>
+<li><p>Vue@ 2.6.10            <a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/">直达官网</a></p>
 </li>
-<li><p>Webstorm 2019      <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">直达官网</a></p>
+<li><p>Webstorm 2019      <a target="_blank" rel="noopener" href="https://www.jetbrains.com/webstorm/">直达官网</a></p>
 </li>
-<li><p>Photoshop CC         <a href="https://helpx.adobe.com/cn/download-install/using/download-creative-cloud-apps.html" target="_blank" rel="noopener">直达官网</a></p>
+<li><p>Photoshop CC         <a target="_blank" rel="noopener" href="https://helpx.adobe.com/cn/download-install/using/download-creative-cloud-apps.html">直达官网</a></p>
 </li>
-<li><p>一双优雅的小短手      <a href="https://github.com/whatqiu" target="_blank" rel="noopener">直达官网</a></p>
-</li>
-</ul>
-<p>  其他就不说了，<strong>talk is cheap,show me the code</strong></p>
+<li><p>一双优雅的小短手      <a target="_blank" rel="noopener" href="https://github.com/whatqiu">直达官网</a></p>
+<p>其他就不说了，<strong>talk is cheap,show me the code</strong></p>
           <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/06/18/记录2019年的618做了什么/#more" rel="contents">
+            <div class="post-button">
+              <a class="btn" href="/2019/06/18/%E8%AE%B0%E5%BD%952019%E5%B9%B4%E7%9A%84618%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
+
+
 
 
     
-      
 
-  
 
-  
+<div class="post-block">
   
   
 
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://whatqiu.github.io/2019/06/17/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/dd.png">
       <meta itemprop="name" content="whatqiu">
       <meta itemprop="description" content="分享一些自己喜欢的东西">
-      <meta itemprop="image" content="/images/dd.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Star New">
     </span>
-
-    
       <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/06/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
 
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h2>
-        
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <time title="创建时间：2019-06-17 16:29:09" itemprop="dateCreated datePublished" datetime="2019-06-17T16:29:09+08:00">2019-06-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-06-19 15:11:58" itemprop="dateModified" datetime="2019-06-19T15:11:58+08:00">2019-06-19</time>
+      </span>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-17 16:29:09" itemprop="dateCreated datePublished" datetime="2019-06-17T16:29:09+08:00">2019-06-17</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-19 15:11:58" itemprop="dateModified" datetime="2019-06-19T15:11:58+08:00">2019-06-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
+  
+</div>
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
           <!--noindex-->
-          
-            <div class="post-button text-center">
+            <div class="post-button">
               <a class="btn" href="/2019/06/17/hello-world/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
-          
           <!--/noindex-->
         
       
     </div>
 
     
-
     
-    
-    
-
-    
-
-    
-      
-    
-    
-
     
 
     <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
+</div>
 
 
-    
-  </section>
-
-  
 
 
-          </div>
-          
 
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
+</div>
+  </main>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/dd.png" alt="whatqiu">
-            
-              <p class="site-author-name" itemprop="name">whatqiu</p>
-              <div class="site-description motion-element" itemprop="description">分享一些自己喜欢的东西</div>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                      <a href="/categories/">
-                    
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                      <a href="/tags/">
-                    
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/whatqiu" title="GitHub &rarr; https://github.com/whatqiu" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://twitter.com/yourname" title="Twitter &rarr; https://twitter.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://www.facebook.com/yourname" title="FB Page &rarr; https://www.facebook.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </div>
-
-      
-
-      
-
-    </div>
-  </aside>
-  
+  <footer class="footer">
+    <div class="footer-inner">
 
 
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2016 – <span itemprop="copyrightYear">2021</span>
-  <span class="with-love" id="animate">
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">whatqiu</span>
-
-  
-
-  
 </div>
-
-
-
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.2</div>
-
-
-
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="site-uv" title="总访客量">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="post-meta-divider">|</span>
-  
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="总访问量">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
-
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
-    
-
-    
-
-    
-
-    
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
-  
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+  </footer>
 
   
-  <script src="/lib/jquery/index.js?v=3.4.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/utils.js?v=7.1.2"></script>
-
-  <script src="/js/motion.js?v=7.1.2"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.2"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
-
-
-
-  
-
-  
-
-
-  <script src="/js/next-boot.js?v=7.1.2"></script>
-
-
-  
-
-  
-
-  
-
-  
-
-
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 
@@ -1672,41 +946,9 @@
 
   
 
-  
-
-  
-
-  
-
-  
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
 
 
-  
 
-  
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/hijiki.model.json"},"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"left","width":150,"height":222},"mobile":{"show":true,"scale":0.5},"log":false});</script></body>
+</body>
 </html>
